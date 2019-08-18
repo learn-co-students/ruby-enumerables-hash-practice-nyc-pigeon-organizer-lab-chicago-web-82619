@@ -14,10 +14,11 @@ def nyc_pigeon_organizer(data)
       pigeons.keys.each do |name|
         if i[1].include?(name)
           pigeons[name][data.keys[0]].push(i.first.to_s)
-          binding.pry
+          
         end
       end
     end
   end
+  binding.pry
   pigeons
 end
